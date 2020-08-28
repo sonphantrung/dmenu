@@ -1,5 +1,5 @@
 # Dmenu
-This Is My Suckless' Dmenu Config
+This Is My Suckless' [Dmenu](https://tools.suckless.org/dmenu/) Config
 ## Patches
 - Line Height
 - Numbers
