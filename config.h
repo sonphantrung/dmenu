@@ -14,6 +14,7 @@ static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { "#bbbbbb", "#222222" },
 	[SchemeSel] = { "#eeeeee", "#88c0d0" },
+	[SchemeMid] = { "#eeeeee", "#770000" },
 	[SchemeSelHighlight] = { "#ffc978", "#88c0d0" },
 	[SchemeNormHighlight] = { "#ffc978", "#222222" },
 	[SchemeOut] = { "#000000", "#00ffff" },
