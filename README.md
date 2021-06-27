@@ -1,9 +1,13 @@
 # Dmenu
 This Is My Suckless' [Dmenu](https://tools.suckless.org/dmenu/) Config
 ## Patches
-- Line Height
-- Numbers
-- Highlight
+- fuzzy{match,highlight}
+- center
+- morecolors
+- line height
+- numbers
+- mouse support
+- vertfull (Muh own version)
 ## Installation
 First, Clone the repo, then:
 ```
