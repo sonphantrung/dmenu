@@ -1,6 +1,7 @@
 # Dmenu
 This Is My Suckless' [Dmenu](https://tools.suckless.org/dmenu/) Config
 ## Patches
+- alpha
 - fuzzy{match,highlight}
 - center
 - morecolors

@@ -1,6 +1,7 @@
 *.orig
 *.rej
 *.diff
+*.o
 config.h
 dmenu
-dmenu.o
+stest
