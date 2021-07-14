@@ -8,6 +8,7 @@ This Is My Suckless' [Dmenu](https://tools.suckless.org/dmenu/) Config
 - numbers
 - mouse support
 - vertfull (Muh own version)
+- case insenitive
 ## Installation
 First, Clone the repo, then:
 ```
