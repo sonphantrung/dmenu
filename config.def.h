@@ -70,7 +70,7 @@ ResourcePref resources[] = {
 	{ "color3",  STRING, &highlightnormfgcolor },
 	{ "background",  STRING, &highlightnormbgcolor },
 	{ "color3",  STRING, &highlightselfgcolor },
-	{ "color4",  STRING, &highlightselbgcolor },
+	{ "foreground",  STRING, &highlightselbgcolor },
 	{ "prompt",      STRING, &prompt },
 	{ "border_width",      INTEGER, &border_width },
 };
