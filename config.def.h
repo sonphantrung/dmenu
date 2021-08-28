@@ -61,10 +61,10 @@ static unsigned int border_width = 0;
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
-	{ "color4", STRING, &normfgcolor },
-	{ "color0", STRING, &normbgcolor },
-	{ "color0",  STRING, &selfgcolor },
-	{ "color4",  STRING, &selbgcolor },
+	{ "foreground", STRING, &normfgcolor },
+	{ "background", STRING, &normbgcolor },
+	{ "background",  STRING, &selfgcolor },
+	{ "foreground",  STRING, &selbgcolor },
 	{ "foreground",  STRING, &midfgcolor },
 	{ "color1",  STRING, &midbgcolor },
 	{ "color3",  STRING, &highlightnormfgcolor },
