@@ -4,7 +4,6 @@ This Is My Suckless' [Dmenu](https://tools.suckless.org/dmenu/) Config
 - alpha
 - fuzzy{match,highlight}
 - center
-- morecolors
 - line height
 - numbers
 - mouse support

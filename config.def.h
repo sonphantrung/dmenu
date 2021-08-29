@@ -18,8 +18,6 @@ static char normfgcolor[] = "#dae1ea";
 static char normbgcolor[] = "#151515";
 static char selfgcolor[]  = "#dae1ea";
 static char selbgcolor[]  = "#5e8d87";
-static char midfgcolor[]  = "#dae1ea";
-static char midbgcolor[]  = "#c13939";
 static char highlightnormfgcolor[]  = "#ffc978";
 static char highlightnormbgcolor[]  = "#222222";
 static char highlightselfgcolor[]  = "#ffc978";
@@ -29,7 +27,6 @@ static char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { normfgcolor, normbgcolor },
 	[SchemeSel] = { selfgcolor, selbgcolor },
-	[SchemeMid] = { midfgcolor, midbgcolor },
 	[SchemeSelHighlight] = { highlightselfgcolor, highlightselbgcolor },
 	[SchemeNormHighlight] = { highlightnormfgcolor, highlightnormbgcolor },
 	[SchemeOut] = { "#000000", "#00ffff" },
@@ -38,7 +35,6 @@ static char *colors[SchemeLast][2] = {
 static unsigned int alphas[SchemeLast][2] = {
 	[SchemeNorm] = { OPAQUE, alpha },
 	[SchemeSel] = { OPAQUE, OPAQUE },
-	[SchemeMid] = { OPAQUE, OPAQUE },
 	[SchemeSelHighlight] = { OPAQUE, OPAQUE },
 	[SchemeNormHighlight] = { OPAQUE, OPAQUE },
 	[SchemeOut] = { OPAQUE, alpha },
@@ -64,13 +60,11 @@ ResourcePref resources[] = {
 	{ "foreground", STRING, &normfgcolor },
 	{ "background", STRING, &normbgcolor },
 	{ "background",  STRING, &selfgcolor },
-	{ "foreground",  STRING, &selbgcolor },
-	{ "foreground",  STRING, &midfgcolor },
-	{ "color1",  STRING, &midbgcolor },
+	{ "color4",  STRING, &selbgcolor },
 	{ "color3",  STRING, &highlightnormfgcolor },
 	{ "background",  STRING, &highlightnormbgcolor },
 	{ "color3",  STRING, &highlightselfgcolor },
-	{ "foreground",  STRING, &highlightselbgcolor },
+	{ "color4",  STRING, &highlightselbgcolor },
 	{ "prompt",      STRING, &prompt },
 	{ "border_width",      INTEGER, &border_width },
 };
