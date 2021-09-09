@@ -8,6 +8,8 @@ This Is My Suckless' [Dmenu](https://tools.suckless.org/dmenu/) Config
 - numbers
 - mouse support
 - vertfull (Muh own version)
+- xresources
+- password
 - case insenitive
 ## Installation
 First, Clone the repo, then:
@@ -15,5 +17,3 @@ First, Clone the repo, then:
 cd dmenu-phantrungson
 make && sudo make clean install
 ```
-
-
