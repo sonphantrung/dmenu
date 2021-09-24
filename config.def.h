@@ -8,9 +8,9 @@ static int centered = 0;                    /* -c option; centers dmenu on scree
 static int min_width = 500;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"monospace:pixelsize=12",
-	"Symbols Nerd Font:pixelsize=12:antialias=true:autohint=true",
-	"Noto Color Emoji:pixelsize=12:antialias=true:autohint=true",
+	"monospace:pixelsize=14",
+	"Symbols Nerd Font:pixelsize=14:antialias=true:autohint=true",
+	"Noto Color Emoji:pixelsize=14:antialias=true:autohint=true",
 };
 
 static char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
