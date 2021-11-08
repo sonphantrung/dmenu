@@ -6,6 +6,8 @@ This Is My Suckless' [Dmenu](https://tools.suckless.org/dmenu/) Config
 - center
 - line height
 - numbers
+- gridmode
+- gridnav (doesn't work)
 - mouse support
 - vertfull (Muh own version)
 - xresources

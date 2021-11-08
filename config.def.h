@@ -41,10 +41,10 @@ static unsigned int alphas[SchemeLast][2] = {
 	[SchemeOut] = { OPAQUE, alpha },
 };
 
-/* -l option; if nonzero, dmenu uses vertical list with given number of lines */
+/* -l and -g options; controls number of lines and columns in grid if > 0 */
 static unsigned int lines      = 0;
 static unsigned int lineheight = 10;         /* -h option; minimum height of a menu line     */
-
+static unsigned int columns    = 0;
 
 /*
  * Characters not considered part of a word while deleting words
