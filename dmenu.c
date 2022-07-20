@@ -298,7 +298,7 @@ drawmenu(void)
 		}
 		x += w;
 		for (item = curr; item != next; item = item->right)
-			x = drawitem(item, x, 0, textw_clamp(item->text), mw - x - TEXTW(">") - TEXTW(numbers));
+			x = drawitem(item, x, 0, textw_clamp(item->text, mw - x - TEXTW(">") - TEXTW(numbers)));
 		if (next) {
 			w = TEXTW(">");
 			drw_setscheme(drw, scheme[SchemeNorm]);
@@ -661,13 +661,8 @@ keypress(XKeyEvent *ev)
 
 	switch(ksym) {
 	default:
-<<<<<<< HEAD
 	insert:
-		if (!iscntrl(*buf))
-=======
-insert:
 		if (!iscntrl((unsigned char)*buf))
->>>>>>> 28fb3e28120db29ea45d1951eee7047b4109ab5f
 			insert(buf, len);
 		break;
 	case XK_Delete:
@@ -914,17 +909,12 @@ static void
 readstdin(void)
 {
 	char buf[sizeof text], *p;
-<<<<<<< HEAD
 	size_t i, imax = 0, size = 0;
 	unsigned int tmpmax = 0;
 	if(passwd){
     	inputw = lines = 0;
     	return;
   	}
-
-=======
-	size_t i, size = 0;
->>>>>>> 28fb3e28120db29ea45d1951eee7047b4109ab5f
 
 	/* read each line from stdin and add it to the item list */
 	for (i = 0; fgets(buf, sizeof buf, stdin); i++) {
@@ -1113,12 +1103,9 @@ setup(void)
 			mw = wa.width;
 		}
 	}
-<<<<<<< HEAD
-	inputw = MIN(inputw, mw/3);
-=======
+//	inputw = MIN(inputw, mw/3);
 	promptw = (prompt && *prompt) ? TEXTW(prompt) - lrpad / 4 : 0;
 	inputw = mw / 3; /* input width: ~33% of monitor width */
->>>>>>> 28fb3e28120db29ea45d1951eee7047b4109ab5f
 	match();
 
 	/* create menu window */
