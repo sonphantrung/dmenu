@@ -909,14 +909,13 @@ static void
 readstdin(void)
 {
 	char buf[sizeof text], *p;
-	size_t i, imax = 0, size = 0;
+	size_t i, imax = 0, size = 0, itemsiz = 0, linesiz = 0;
 	unsigned int tmpmax = 0;
 	if(passwd){
     	inputw = lines = 0;
     	return;
   	}
 	char *line = NULL;
-	size_t i, itemsiz = 0, linesiz = 0;
 	ssize_t len;
 
 	/* read each line from stdin and add it to the item list */
